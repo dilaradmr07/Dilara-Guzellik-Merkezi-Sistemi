@@ -1,2 +1,0 @@
-# Dilara Guzellik Merkezi Sistemi
-
