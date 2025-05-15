@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İletişim</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function mesajGonder() {
+      alert("Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapılacaktır.");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>İletişim</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hizmetler.html">Hizmetler</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Bize Ulaşın</h2>
+    <p>Aşağıdaki formu doldurarak bize mesaj gönderebilirsiniz:</p>
+
+    <form onsubmit="mesajGonder(); return false;">
+      <label>Adınız Soyadınız:</label><br>
+      <input type="text" required><br>
+
+      <label>E-posta Adresiniz:</label><br>
+      <input type="email" required><br>
+
+      <label>Konu:</label><br>
+      <input type="text"><br>
+
+      <label>Mesajınız:</label><br>
+      <textarea rows="5" required></textarea><br>
+
+      <button type="submit">Mesajı Gönder</button>
+    </form>
+
+    <h3>Salon Adresimiz</h3>
+    <p>Güzellik Caddesi No:15, Kadıköy / İstanbul</p>
+    <p>Telefon: 0 (212) 123 45 67</p>
+    <p>Email: info@guzelliksalonu.com</p>
+
+    <h3>Konum</h3>
+    <iframe src="https://www.google.com/maps" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+  </section>
+</body>
+</html>
